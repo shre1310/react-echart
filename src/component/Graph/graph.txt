@@ -1,0 +1,20 @@
+ const xAxis = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    const legend = ['Email', 'Union Ads']
+    const series = [
+        {
+            name: 'Email',
+            type: 'line',
+            stack: 'Total',
+            data: [120, 132, 101, 134, 90, 230, 210],
+            lineStyle: { color: '#55eb34' }
+
+        },
+        {
+            name: 'Union Ads',
+            type: 'line',
+            stack: 'Total',
+            data: [220, 182, 191, 234, 290, 330, 310]
+        },
+    ]
+
+            <Graph xAxis={xAxis} series={series} legend={legend} />
